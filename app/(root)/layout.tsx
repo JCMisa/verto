@@ -1,6 +1,10 @@
 import Header from "@/components/custom/Header";
 
-const MainLayout = async ({ children }: { children: React.ReactNode }) => {
+const MainLayout = async ({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) => {
   return (
     <main className="min-h-screen text-gray-400">
       <Header />
